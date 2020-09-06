@@ -74,6 +74,10 @@ h1, h2, h3, h4, h5, h6,
 img{
 	max-width:100%;
 }
+
+.portfolio-image {
+	object-fit: contain;
+}
 .parallax{
 	background-size:cover;
 }
@@ -1912,6 +1916,7 @@ body .symp-btn{
 .project-content > .col {
 	display: flex;
 	justify-content: center;
+	align-items: flex-start;
 }
 
 .project-problem-section {
