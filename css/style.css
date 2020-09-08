@@ -1774,6 +1774,7 @@ body .symp-btn{
 	}
 	.front-section{
 		padding-bottom:110px;
+		padding-top: 0 !important;
 	}
 	.front-heading > h2{
 		font-size:50px;
@@ -1891,7 +1892,7 @@ body .symp-btn{
 		-o-transform:rotate(-45deg) translateY(45px);
 		transform:rotate(-45deg) translateY(100px);
 		position:absolute;
-		bottom:0;
+		bottom:80px;
 		left:-40px;
 	}
 }
