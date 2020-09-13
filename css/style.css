@@ -1699,8 +1699,8 @@ body .symp-btn{
 	Work Page
 =======================================================================*/
 .single-work{
-	padding-top:80px;
-	padding-bottom:130px;
+	/* padding-top:80px; */
+	/* padding-bottom:130px; */
 }
 .work-info{
 	list-style:none;
