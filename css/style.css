@@ -441,9 +441,10 @@ body.section-show .transition-mask:before{
 
 
 .front-section{
-	padding-top:60px;
+	/* padding-top:60px; */
 	padding-bottom:200px;
 	position:relative;
+	height: 100vh;
 }
 .front-heading{
 	text-align:center;
@@ -483,6 +484,7 @@ body.section-show .transition-mask:before{
 	-o-transform:rotate(45deg);
 	transform:rotate(45deg);
 	border-radius:0;
+	margin-top: 150px;
 }
 .front-person-img > img{
 	max-width:100%;
@@ -603,7 +605,7 @@ body.section-show .transition-mask:before{
 	text-align:left;
 	text-transform:uppercase;
 	letter-spacing:3px;
-	text-decoration:none;
+	text-decoration:underline;
 	line-height:1em;
 }
 .front-person-links > ul > li > a:before,
@@ -649,10 +651,11 @@ body.section-show .transition-mask:before{
 	padding-bottom:0px;
 }
 .basic-info{
-	padding-top:100px;
+	padding-top:60px;
 	padding-bottom:100px;
 	position:relative;
 	border-bottom:solid 1px #F0F0F0;
+	border-bottom-width: 0px;
 }
 .basic-info .section-header{
 	margin-bottom:80px;
@@ -712,7 +715,7 @@ body.section-show .transition-mask:before{
 .funfacts-block{
 	padding-top:60px;
 	padding-bottom:20px;
-	background-image:url(../img/bg-funfacts.jpg);
+	background:royalblue;
 	background-size:cover;
 	background-attachment:fixed;
 	margin-top: 5rem;
@@ -1278,6 +1281,7 @@ body.section-show .transition-mask:before{
 =======================================================================*/
 .posts-block{
 	padding:90px 0;
+	padding-top: 45px;
 }
 .posts-block .section-header{
 	margin-bottom:60px;
@@ -1597,7 +1601,33 @@ body .symp-btn{
 	-o-transform:rotate(45deg);
 	transform:rotate(45deg);
 }
+.portfolio-items > .item > .inner > .caption > .caption-inner > .links > li > div > a{
+	display:block;
+	height:30px;
+	width:30px;
+	line-height:30px;
+	font-size:0;
+	border:solid 1px #FFF;
+	color:#FFF;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
 .portfolio-items > .item > .inner > .caption > .caption-inner > .links > li > a > i{
+	display:block;
+	height:inherit;
+	width:inherit;
+	line-height:inherit;
+	vertical-align:middle;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+.portfolio-items > .item > .inner > .caption > .caption-inner > .links > li > div > a > i{
 	display:block;
 	height:inherit;
 	width:inherit;
@@ -1614,7 +1644,17 @@ body .symp-btn{
 	vertical-align:middle;
 	line-height:1em;
 }
+.portfolio-items > .item > .inner > .caption > .caption-inner > .links > li > div > a > i:before{
+	font-size:16px;
+	vertical-align:middle;
+	line-height:1em;
+}
 .portfolio-items > .item > .inner > .caption > .caption-inner > .links > li > a:hover{
+	background:#FFF;
+	background:rgba(255,255,255,.9);
+	color:#333;
+}
+.portfolio-items > .item > .inner > .caption > .caption-inner > .links > li > div > a:hover{
 	background:#FFF;
 	background:rgba(255,255,255,.9);
 	color:#333;
@@ -2013,4 +2053,45 @@ body .symp-btn{
 
 .footer-link > a {
 	color: #999 !important;
+}
+
+
+.about-me-row {
+	padding: 0 13rem;
+}
+
+.my-work-row {
+	width: 60%;
+}
+
+
+.mobile-content {
+	margin: 0 15px;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+@media(max-width:768px){
+	.about-me-row {
+		padding: 0 1rem;
+	}
+	.basic-info {
+		padding-top: 10px;
+	}
+	.testimonials-block {
+		padding: 20px 0;
+	}
+	.my-work-row {
+		width: 100%;
+	}
+	.mobile-content {
+		margin: 0 15px;
+		display: flex;
+		justify-content: flex-end;
+
+	}
+	.item {
+		margin-bottom: 20px;
+	}
 }
